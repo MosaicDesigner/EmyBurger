@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search</title>
+  <style>
+    .container{
+      width: 1250px;
+      height: 650px;
+      background: cyan;
+      border-radius: 15px;
+      box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
+      padding: 30px; 
+      overflow-y: scroll;
+    }
+    body{
+      width: 100%;
+      height: 100vh;
+      background: rgb(240, 239, 243);
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;    
+    }
+    .container form{
+      width: 100%;
+      border: 1px solid rgb(82, 74, 2);
+      border-radius: 4px;
+    }
+    .product-list{
+      padding: 20px 0;
+    }
+    .container form input{
+      border: none;
+      outline: none;
+      box-shadow: none;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 8px 10px;
+    }
+    .product{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 15px;
+    }
+    .product img{
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .product .p-details{
+      padding-left: 15px;
+    }
+    .product .p-details h2{
+      font-size: 20px;
+      color: black;
+    }
+    .product .p-details h3{
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <section class="container">
+      <form>
+        <input type="text" name="" id="search-item" placeholder="Search Anything" onkeyup="search()">
+      </form>
+
+      <div class="product-list" id="product-list">
+
+        <div class="product">
+          <img src="hamburger.jpg" alt="">
+          <div class="p-details">
+             <h2>Classic Smash Delight</h2>
+             <h3>3000N</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="spicy burger.jpg" alt="">
+          <div class="p-details">
+             <h2>Inferno Burger</h2>
+             <h3>3500N</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="chiken burger.jpg" alt="">
+          <div class="p-details">
+             <h2>Utopia Chicken Burger</h2>
+             <h3>3500N</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="fresh frioes.jpg" alt="">
+          <div class="p-details">
+             <h2>Fresh fries</h2>
+             <h3>1500N</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="curly frioes.jpg" alt="">
+          <div class="p-details">
+             <h2>Curly fries</h2>
+             <h3>2000N</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="animal frioes.jpg" alt="">
+          <div class="p-details">
+             <h2>Animal Style fries</h2>
+             <h3>2500N</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="pepe ronni pizza.jpg" alt="">
+          <div class="p-details">
+             <h2>Pepe Ronni Pza</h2>
+             <h3>5000N</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="barbeq pizza.jpg" alt="">
+          <div class="p-details">
+             <h2>BBQ Pza</h2>
+             <h3>5000N</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="magarita pizza.jpg" alt="">
+          <div class="p-details">
+             <h2>Ma-Ga-Ri-Ta Pza</h2>
+             <h3>2500N</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="vanila milkshake.jpg" alt="">
+          <div class="p-details">
+             <h2>Vanila milkshake</h2>
+             <h3>2500N</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="chocolate milkshake.jpg" alt="">
+          <div class="p-details">
+             <h2>choco shako</h2>
+             <h3>2500N</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="straberry milkshake.jpg" alt="">
+          <div class="p-details">
+             <h2>straberry milkshakky</h2>
+             <h3>2500N</h3>
+          </div>
+        </div>
+      </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
